@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel='shortcut icon' sizes='256x256' href='https://koushik-2006.github.io/Expense-Tracker-/static/images/CharyLogo.svg'>
+
+        <!-- Google Font imports -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,600&family=Pacifico&display=swap" rel="stylesheet">
+
+        <!-- CSS Stylesheets -->
+        <link rel='stylesheet' href='https://koushik-2006.github.io/Expense-Tracker-/static/css/style.css'>
+        <link rel='stylesheet' href='https://koushik-2006.github.io/Expense-Tracker-/static/css/legal.css'>
+
+        <!-- JavaScript links -->
+        <script src='https://koushik-2006.github.io/Expense-Tracker-/static/javascript/script.js'></script>
+
+        <Title>Chary | Privacy & Cookie Policy</Title>
+    </head>
+
+    <body onload="fillProfilePics()">
+        <div id="header-container">
+            <header>
+                <img id='large-logo' src="https://koushik-2006.github.io/Expense-Tracker-/static/images/CharyLogo.svg" onclick="homeAction()" alt='Chary logo'>
+                <img id='toggle-icon' class="hamburg icon" src="https://koushik-2006.github.io/Expense-Tracker-/static/images/hamburger-icon.svg" onclick="toggleMenu()" alt="toggle menu button">
+
+                <nav id="website-nav"><a href="https://koushik-2006.github.io/Expense-Tracker-/templates/about.html">~ KOUSHIK S</nav></a>
+            </header>
+        </div>
+
+        <div class="content non-header" id="legal-content">
+            <button onclick="homeAction()">Back to Home</button>
+            {% if loggedIn %}
+                <button class='cta-button' onclick="dashboardAction()">Dashboard</button>
+            {% endif %}
+
+            <h1>
+                Cookie Policy & Privacy Policy
+            </h1>
+            
+            <h2 id="cookie-section">Cookie Policy</h2>
+            <a class="normal-link" onclick="scrollToPrivacy()" alt="Link to privacy policy">Go to privacy policy</a>
+
+            <h3>Introduction</h3>
+            <p>
+                This cookie policy explains how Chary uses cookies and similar technologies when you visit our web app.
+            </p>
+    
+            <h3>What is a Cookie?</h3>
+            <p>
+                A cookie is a small text file that a website saves on your device when you visit it. This data can be read from your device when you revisit the site later.
+            </p>
+            <p>
+                A cookie can store information about your login information, interactions, settings, and preferences to provide a personalized experience.
+            </p>
+    
+            <h3>What types of Cookies does Chary use?</h3>
+            <p>
+                We use only one type of cookie on our app:
+            </p>
+            <ul>
+                <li>
+                    Session Cookies: These cookies are temporary and necessary for the basic functionality of our app. These session cookies are deleted when you close the app, log out of your account, or when the cookie expires. They are used to remember your login information once you are authenticated so that you can view your own personal data. Once a session has ended, the cookie is deleted, and the user would need to sign in again.
+                </li>
+            </ul>
+    
+            <h3>How do we use Cookies?</h3>
+            <p>
+                We use cookies for the following purposes:
+            </p>
+            <ul>
+                <li>
+                    To remember your login information
+                </li>
+                <li>
+                    To check that a user has been authenticated before taking certain actions
+                </li>
+                <li>
+                    To improve our services
+                </li>
+            </ul>
+            <p>
+                Chary does not create cookies that are not vital to the functionality of the website and Chary does not sell your information or use your information for analytics.
+            </p>
+    
+            <h3>What choices do you have?</h3>
+            <p>
+                You have the right to choose whether or not to allow us to use cookies. You can exercise your choice by using the settings in your browser or mobile device to block cookies. Since cookies are vital to the functionality of Chary, you also have the choice to not use Chary.
+            </p>
+    
+            <h3>How can you control Cookies></h3>
+            <p>
+                You can control cookies by using the settings in your browser. In your browser settings, search for terms like /'Cookies/' or /'Site Data/'. There, you can find directions to manage, restrict, and delete your cookies at any time.
+            </p>
+    
+            <h3>Changes to our Cookie policy</h3>
+            <p>
+                Chary is unlikely to make updates to our cookie policy, as we have no need to store more information or use the information we collect in a different way. However, if we were to make any material changes, we will notify you by posting a notice on our app so that you can review the updated policies.
+            </p>
+    
+            <h3>Contact us </h3>
+            <p>
+                If you have any questions about this cookie policy, please contact us by filling out our contact form
+                <a class="normal-link" href="https://koushik-2006.github.io/Expense-Tracker-/templates/contact.html" alt="contact form">here</a>.
+            </p>
+    
+            <h2 id="privacy-section">Privacy Policy</h2>
+            <a class="normal-link" onclick="scrollToCookie()" alt="Link to cookie policy">Go to cookie policy</a>
+    
+            <h3>Introduction</h3>
+            <p>
+                Chary is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share your personal information when you visit our website or use our web application.
+            </p>
+    
+            <h3>Information we collect</h3>
+            <p>
+                We collect the following types of personal information from you:
+            </p>
+            <ul>
+                <li>
+                    Email Address: We collect your email address when you create an account with Chary. This email is used to personally identify and authenticate you. We would only use your email address for communication in the case of an emergency.
+                </li>
+                <li>
+                    Password: If you sign in with a password rather than using 'Sign in with Google' or another 3rd party sign-in method, we will also store your password. We use this password to authenticate your identity. Passwords are encrypted in our database, so anyone with access to Chary's database will not be able to view them.
+                </li>
+            </ul>
+    
+            <h3>How we use your information</h3>
+            <p>
+                We use your personal information to:
+            </p>
+            <ul>
+                <li>
+                    Provide you with access to our app
+                </li>
+                <li>
+                    Authenticate your identity when you log in
+                </li>
+            </ul>
+    
+            <h3>How we share your information</h3>
+            <p>
+                Chary does not share your information with any 3rd parties except in the following limited circumstances:
+            </p>
+            <ul>
+                <li>
+                    Service Providers: If you create an account with Chary, we share your personal information with 3rd-party services that help us to operate our app. These service providers are only authorized to use your personal information for the purpose of providing services to us and to you. This includes our use of Google Cloud Platform's Firestore database. 
+                </li>
+                <li>
+                    Legal Compliance: We may share your personal information if we believe that such disclosure is necessary to comply with the law, to enforce our Terms of Service, or to protect the rights, property, or safety of our users or others.
+                </li>
+            </ul>
+    
+            <h3>Data security</h3>
+            <p>
+                Chary uses encryption to hide passwords from the database. Chary also authenticates users to ensure that information is accessed by the person who owns it. However, no method of transmission over the Internet or method of electronic storage is 100% secure. Therefore, we cannot guarantee the absolute security of your data.
+            </p>
+    
+            <h3>What choices do you have?</h3>
+            <p>
+                You have the following choices when it comes to your personal information:
+            </p>
+            <ul>
+                <li>
+                    Accessing and changing your information: Aside from your email and password, you can modify any information that you give to Chary by logging in visiting your 'Profile' or by editing any of the properties you create. 
+                </li>
+                <li>
+                    Deleting your account: You can delete your account by logging in an visiting your 'Profile'. At the bottom, there is a link to 'Delete Account'. Deleting your account will permanently delete any and all information associated with your account from our database. 
+                </li>
+                <li>
+                    Contacting Chary: In the case where you are having difficulties with managing your account, you can contact us 
+                    <a class="normal-link" href="https://koushik-2006.github.io/Expense-Tracker-/templates/contact.html" alt="Contact us link" >here</a>.
+                </li>
+            </ul>
+    
+            <h3>Changes to our privacy policy</h3>
+            <p>
+                We may update this Privacy Policy from time to time. If we make any material changes, we will notify you through a pop-up on our website. You are responsible for reviewing this Privacy Policy periodically. Your continued use of our website following the posting of the updated Privacy Policy will constitute your agreement to such updated Privacy Policy.
+            </p>
+    
+            <h3>Contact us</h3>
+            <p>
+                If you have any questions about this Privacy Policy, please contact us 
+                <a class="normal-link" href="https://koushik-2006.github.io/Expense-Tracker-/templates/contact.html" alt="Contact us link">here</a>.
+            </p>
+        </div>
+
+        <div class="footer">
+            <div class='contact-methods'> 
+                <div class='contact-icon' title="Asha's Github">
+                    <a  target="_blank" rel="noopener noreferrer" href='https://github.com/koushik-2006' alt="Github logo">
+                        <img src="https://koushik-2006.github.io/Expense-Tracker-/static/images/GitHub-Mark-Light-64px.png" alt="Github logo">
+                    </a>
+                </div> 
+                <div class='contact-icon' title="Asha's LinkedIn">
+                    <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/koushik-cse/' alt="LinkedIn logo">
+                        <img src="https://koushik-2006.github.io/Expense-Tracker-/static/images/LI-In-Bug.png" alt="LinkedIn logo">
+                    </a>
+                </div>
+                <div class='contact-icon' title="Asha's personal portfolio website">
+                    <a target="_blank" rel="noopener noreferrer" href='https://leetcode.com/u/koushiksethuraman' alt="Logo for Asha's personal portfolio website">
+                        <img src="https://koushik-2006.github.io/Expense-Tracker-/static/images/AshaIV-logo-light.svg" alt="Logo for Asha's personal portfolio website">
+                    </a>
+                </div>
+            </div> 
+            <div id="legal">
+                <div class="legal-button">
+                    <a href="https://koushik-2006.github.io/Expense-Tracker-/templates/privacy-policy.html">Privacy Policy</a>
+                </div>
+                <span>|</span>
+                <div class="legal-button">
+                    <a href="https://koushik-2006.github.io/Expense-Tracker-/templates/tos.html">Terms of Service</a>
+                </div>
+                <span>|</span>
+                <div class="legal-button">
+                    <a href="https://koushik-2006.github.io/Expense-Tracker-/templates/contact.html">Contact</a>
+                </div>
+                <span>|</span>
+                <div class="report-button">
+                    <a target="_blank" rel="noopener noreferrer" href="https://mail.google.com/mail/?view=cm&to=koushik.sethuraman6@gmail.com&su=Project%20Discussion&body=Hi%20Koushik,%20I%20would%20like%20to%20connect%20with%20you%20regarding%20your%20project?usp=sf_link" alt="Link to report an issue">Report Issue</a>
+                </div>
+            </div>
+            <div class="btt-icon" onclick="bttAction()">
+                <img class="icon" src="https://koushik-2006.github.io/Expense-Tracker-/static/images/CharyLogo.svg" alt="Simplified version of the Chary logo. Scrolls to top of page when clicked.">            
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+/* Landing hero styles */
+
+#landing-hero {
+    padding-left: var(--DesktopPadBody);
+}
+#hero-text {
+    display: grid;
+    grid-template-columns: 530px 1fr;
+    grid-template-rows: 1fr 1fr 1fr .4fr 1fr;
+    align-items: center;
+    height: 100%;
+}
+
+#hero1 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+#hero2 {
+    display: block;
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+#hero2 text {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    fill: var(--Light);
+    stroke: var(--Background);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+#hero2-mobile {
+    display: none;
+}
+
+#hero3 {
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+
+#hero-img {
+    width: 60%;
+    min-width: 530px;
+    max-width: 700px;
+    max-height: 57vh;
+    display: block;
+    grid-column: 1/3;
+    grid-row: 2/5;
+    text-align: end;
+    z-index: -1;
+    justify-self: end;
+    align-self: end;
+}
+
+#hero-img-mobile {
+    display: none;
+}
+
+#hero-img-svg {
+    transform: scale(-1, 1);
+    height: 100%;
+}
+
+#hero-login {
+    margin-right: 15px;
+}
+
+#down-icon-container {
+    grid-row: 5/6;
+    grid-column: span 2;
+    display: flex;
+    flex-grow: .5;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px;
+}
+
+#down-icon:hover {
+    cursor: pointer;
+}
+
+/* Information section styles */
+
+#landing-info {
+    max-width: 700px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.number {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--Grey);
+    width:150px;
+    height:150px;
+    border-radius: 25%;
+}
+
+.info-box {
+    display: grid;
+    grid-template-columns: 35% auto;
+    align-items: center;
+    margin-top: 30px;
+}

@@ -1,0 +1,109 @@
+body {
+    background-color: var(--Background);
+    background-image: url("https://koushik-2006.github.io/Expense-Tracker-/static/images/Background_chary.svg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 90%;
+}
+
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: var(--navPad);
+    padding-bottom: var(--medPad);
+}
+
+#login-button {
+    color: var(--Dark);
+    border-radius: 50rem 50rem 50rem 50rem;
+    padding: 10px 20px 10px 20px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    width: fit-content;
+    display: flex;
+    align-content: center;
+    background-color:var(--ContrastL);
+    grid-row: 4;
+    border: solid 1px var(--ContrastL);
+    height: fit-content;
+    align-items: center;
+}
+
+#login-button img {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+    background-color: var(--Light);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#login-container {
+    background-color: var(--faded);
+    justify-items: center;
+    border-radius: 1em;
+    padding: var(--mobilePad);
+    width: 80%;
+}
+
+#login-card {
+    display: grid;
+    grid-template-rows: .5fr 1fr .1fr .5fr;
+    justify-items: center;
+    gap: var(--mobilePad);
+}
+
+#login-card hr {
+    grid-row: 3;
+    width: 100%;
+    border-style: solid;
+    height: 2px;
+    color: var(--Background)
+}
+
+#login-card h1 {
+    color: var(--Light);
+    text-align: center;
+    grid-row: 1;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+#unavailable-img {
+    display: none;
+    grid-row: 3;
+    z-index: 1;
+    grid-column: 1;
+    width:220px;
+    height: auto;
+    background-color: var(--faded);
+}
+
+#login-form {
+    z-index: 0;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#login-form input {
+    border-radius: 50rem 50rem 50rem 50rem;
+    margin-top: 5px;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid white;
+    background-color: var(--Light);
+}
+
+#login-form input:active, input:focus-visible {
+    border-radius: 50rem 50rem 50rem 50rem;
+    margin-top: 5px;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid var(--MainL);
+    outline: var(--MainL) auto 1px;
+    background-color: var(--Light);
+}
+
+#image-card {
+    display: none;
+}

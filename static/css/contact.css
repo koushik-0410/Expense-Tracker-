@@ -1,0 +1,28 @@
+#contact {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--smallPad);
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    color: var(--Light);
+}
+
+@media screen and (max-width: 767px) {
+    #contact {
+        padding: var(--smallNavPad) var(--mobilePad);
+    }
+}

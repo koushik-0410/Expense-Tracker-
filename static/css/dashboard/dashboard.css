@@ -1,0 +1,632 @@
+/*
+ *** General Styles for All Tabs in Dashboard ***
+ */
+
+h2 {
+    font-size:1.5em;
+}
+
+h4 {
+    font-size: .8em;
+}
+
+#dashboard-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--lgPad);
+    margin-bottom: var(--lgPad);
+}
+
+/*
+ *** Styles for Left-Hand Side of Dashboard ***
+ */
+
+#dashboard-left {
+    grid-column: 1;
+    grid-row: 1;
+    height: 100vh;
+    width: 100%;
+    min-width: 12rem;
+    padding-top: 2.5em;
+    overflow: hidden;
+    text-align: center;
+
+    align-items: start;
+    justify-items: center;
+    transform: translateY(0px) !important;
+}
+
+#dashboard-profile {
+    width: 5rem;
+    height: 5rem;
+    align-self: center;
+    grid-row: 1;
+}
+
+#dashboard-tabs {
+    display: none;
+    grid-row: 2;
+    max-width: inherit;
+    width: inherit;
+}
+
+#dashboard-tabs ul {
+    margin: 0rem;
+    padding: 0rem;
+    list-style: none;
+}
+
+#dashboard-tabs li {
+    margin-bottom: 1rem;
+    border-radius: 0rem 50rem 50rem 0rem;
+    padding: 0.8rem;
+}
+
+.dashTab {
+    cursor: pointer;
+}
+
+.dashTab:hover {
+    background-color: var(--MainD);
+}
+
+.active {
+    background-color: var(--Navy);
+}
+
+/*
+ *** General Styles for Main Section of Dashboard ***
+ */
+
+#dashboard-main {
+    grid-column: 2;
+    grid-row: 1;
+    overflow: hidden;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2.5em;
+}
+
+#tab-head {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+}
+
+#filter-container {
+    grid-row: 2;
+    grid-column: 1/4;
+    display: flex;
+    gap: var(--medPad);
+    background-color: var(--Dark);
+    padding: var(--mobilePad) var(--lgPad);
+    margin-top: 10px;
+    border-radius: var(--lgPad);
+}
+
+#filter-form {
+    gap: var(--mobilePad) var(--medPad);
+    flex-wrap: wrap;
+}
+
+.filter-img {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+#period-selector {
+    min-width: 150px;
+}
+
+#upcoming-selector {
+    min-width: 175px;
+}
+
+#dashboard-main h1 {
+    display: inline;
+}
+
+#earning-container, #expense-container {
+    margin-top: 20px;
+}
+
+/*
+ *** Styles for Overview Section of Dashboard ***
+ */
+
+#overview-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1.4rem;
+}
+
+.snip-containers {
+    background-color: var(--Dark);
+    border-radius: 20px;
+    flex: auto;
+}
+
+.module-header {
+    cursor: pointer;
+}
+
+#chart-container {
+    min-height: 35vh;
+}
+
+#chart-snip-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--smallPad);
+}
+
+#chart-container .vertical-container {
+    cursor: pointer;
+}
+
+#limited-charts {
+    display: flex;
+    justify-content: center;
+}
+
+#limited-charts p {
+    margin: 0px;
+    text-align: center;
+}
+
+#limited-charts .chart-number {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--Grey);
+}
+
+.no-pie {
+    margin-top: var(--medPad) !important;
+}
+
+#stat-snip-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr auto 1fr 1fr auto 1fr;
+    align-items: center;
+    gap: var(--smallPad);
+}
+
+#stat-snip-container p {
+    margin: 0px;
+}
+
+.breakdown-headers {
+    color: var(--Grey);
+}
+
+.stat-break {
+    width: 1px;
+    height: 100%;
+    background-color: var(--Grey);
+}
+
+#total-expense,
+#total-earning {
+    text-align: center;
+}
+
+#final-expense,
+#final-earning {
+    text-align: right;
+}
+
+#upcoming-expense,
+#upcoming-earning {
+    text-align: left;
+}
+
+
+.view-date-container {
+    grid-column: 1/7;
+    grid-row: 1;
+}
+
+#total-expense {
+    grid-column: 1/4;
+    grid-row: 2;
+}
+
+#total-earning {
+    grid-column: 4/7;
+    grid-row: 2;
+}
+
+#final-expense {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#upcoming-expense {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#final-earning {
+    grid-column: 4;
+    grid-row: 3;
+}
+
+#upcoming-earning {
+    grid-column: 6;
+    grid-row: 3;
+}
+
+#profile-snip-container {
+    cursor: pointer;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+}
+
+#user-info-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr auto;
+}
+
+#user-info-container p {
+    margin: 0px;
+}
+
+#user-thumbnail {
+    justify-self: center;
+    width: 5rem;
+    height: 5rem;
+    grid-row: 1;
+    grid-column: 1/3;
+}
+
+#user-name {
+    grid-row: 2;
+    grid-column: 1/3;
+    font-size: 1.3rem;
+}
+
+#user-email {
+    grid-row: 3;
+    grid-column: 1/3;
+}
+
+#user-currency {
+    grid-row: 4;
+    grid-column: 1;
+}
+
+#user-info-container .edit-img {
+    grid-row: 4;
+    grid-column: 2;
+}
+
+#budget-snip-container {
+    display: grid;
+    grid-template-columns: 1fr .2fr;
+    grid-template-rows: .2fr 1fr .2fr;
+    gap: var(--smallPad);
+    width: 25%;
+    min-width: 460px;
+    min-height: 430px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#budget-snip-container .module-header {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#budget-snip-container .add-icon {
+    grid-column: 2;
+    grid-row: 1;
+} 
+
+#budget-snip-container .carousel {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+#limited-budgets-container, #chart-container {
+    grid-column: 1/3;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+#limited-budgets, #limited-charts {
+    transform-origin: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#limited-budgets {
+    display: flex;
+    flex-direction: column;
+    gap: var(--smallPad);
+}
+
+.budget-snippet {
+    display: grid;
+    grid-template-columns: .3fr 1fr .4fr auto;
+    gap: .8rem;
+    align-items: center;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.budget-snippet .recur-img {
+    grid-column: 1;
+    align-self: center;
+}
+
+.budget-snippet .more-img {
+    justify-self: end;
+}
+
+.snip-budget-main {
+    grid-column: 2;
+    font-size: 1.2rem;
+    display: grid;
+    gap: .5rem;
+}
+
+.snip-svg-div {
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+}
+
+.snip-budget-used {
+    grid-column: 3;
+}
+
+.snip-edit {
+    grid-column: 4;
+}
+
+.snip-budget-name, .snip-budget-used {
+    margin: 0px;
+    line-height: 1.2rem;
+}
+
+.snip-outer-progress {
+    fill: none;
+    stroke-width: 20;
+    stroke-linecap: round;
+    stroke: var(--Navy);
+}
+
+.snip-inner-progress {
+    fill: none;
+    stroke-width: 15;
+    stroke-linecap: round;
+    stroke: var(--ContrastL);
+}
+
+.snip-grey-progress {
+    fill: none;
+    stroke-width: 15;
+    stroke-linecap: round;
+    stroke: var(--Grey);
+}
+
+#earning-snip-container, #expense-snip-container {
+    width: 65%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+#earning-snip-container h3, #expense-snip-container h3 {
+    margin-bottom: var(--medPad);
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#earning-snip-container .add-icon, #expense-snip-container .add-icon {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+}
+
+#earning-snip-container table, #expense-snip-container table {
+    grid-column: 1/3;
+    grid-row: 2;
+    height: fit-content;
+}
+
+/*
+*** Styles for Budget Section of Dashboard ***
+*/
+
+#budget-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+#empty-budgets-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+    width: 100%;
+}
+
+.budget-info {
+    padding: 1.3em;
+    margin: 10px;
+    background-color: var(--Dark);
+    width: 250px;
+    height: fit-content;
+    max-height: 350px;
+    display: grid;
+    grid-template-rows: 0.8fr 1fr 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+#recur-icon-div {
+    align-self: start;
+    justify-self: start;
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.recur-flag {
+    height: 1.7rem;
+    width: auto;
+    position: absolute;
+    transform: scaleX(0);
+    transform-box: fill-box;
+    transform-origin: 25%;
+    transition: transform .2s ease-out;
+}
+
+.budget-info:hover .recur-flag {
+    transform: scaleX(1);
+}
+
+.recur-text {
+    margin: 0px;
+    font-size: .9rem;
+    padding-left: var(--smallPad);
+    color: var(--Light);
+    transform: scaleX(0);
+    transform-box: fill-box;
+    transform-origin: 25%;
+    transition: transform .2s ease-out;
+}
+
+.budget-info:hover .recur-text {
+    transform: scaleX(1);
+}
+
+.svg-div {
+    height: 0px;
+    grid-row: 3;
+    grid-column: 1/3;
+}
+
+.recur-img, .non-recur-img {
+    align-self: start;
+    vertical-align: middle;
+    z-index: +1;
+}
+
+.options-div {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+    justify-self: end;
+    z-index: 2;
+}
+
+.options-img {
+    margin: 5px;
+}
+
+.options-panel {
+    position: absolute;
+    width: fit-content;
+    background-color: var(--Navy);
+    border-radius: 10px;
+    box-shadow: var(--Dark) 5px 5px 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.options-title {
+    display: none;
+}
+
+.budget-more, .budget-edit, .budget-copy {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: var(--smallPad);
+}
+
+.budget-more h4, .budget-edit h4, .budget-copy h4 {
+    color: var(--Light);
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 0px 0px 0px var(--smallPad);
+}
+
+.budget-more:hover {
+    background-color: var(--faded);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.budget-copy:hover {
+    background-color: var(--faded);
+}
+
+.budget-edit:hover {
+    background-color: var(--faded);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.budget-name {
+    margin: 0px;
+    padding-bottom: 10px;
+    max-width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    grid-row: 2;
+    grid-column: 1/3;
+}
+
+.fraction-container {
+    grid-column: 1/3;
+    grid-row: 4;
+    align-self: center;
+    justify-self: center;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr;
+}
+
+.fraction-slash {
+    grid-column: 2;
+    grid-row: 1/3;
+    font-size: 2em;
+}
+
+.fraction-top {
+    text-align: right;
+    grid-row: 1;
+    grid-column: 1;
+    align-self: end;
+    justify-self: end;
+    font-weight: 300;
+}
+
+.fraction-bottom {
+    grid-row: 2;
+    grid-column: 3;
+    align-self: start;
+    justify-self: start;
+    font-weight: 300;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel='shortcut icon' sizes='256x256' href='https://koushik-2006.github.io/Expense-Tracker-/static/images/CharyLogo.svg'>
+
+        <!-- Google Font imports -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,600&family=Pacifico&display=swap" rel="stylesheet">
+
+        <!-- CSS Stylesheets -->
+        <link rel='stylesheet' href='https://koushik-2006.github.io/Expense-Tracker-/static/css/style.css'>
+        <link rel='stylesheet' href='https://koushik-2006.github.io/Expense-Tracker-/static/css/legal.css'>
+
+        <!-- JavaScript links -->
+        <script src='https://koushik-2006.github.io/Expense-Tracker-/static/javascript/script.js'></script>
+
+        <Title>Chary | Terms of Service</Title>
+    </head>
+
+    <body onload="fillProfilePics()">
+        <div id="header-container">
+            <header>
+                <img id='large-logo' src="https://koushik-2006.github.io/Expense-Tracker-/static/images/CharyLogo.svg" onclick="homeAction()" alt='Chary logo'>
+                <img id='toggle-icon' class="hamburg icon" src="https://koushik-2006.github.io/Expense-Tracker-/static/images/hamburger-icon.svg" onclick="toggleMenu()" alt="toggle menu button">
+
+                <nav id="website-nav"><a href="https://koushik-2006.github.io/Expense-Tracker-/templates/about.html">~ KOUSHIK S</nav></a>
+            </header>
+        </div>
+
+        <div class="content non-header" id="legal-content">
+            <button onclick="homeAction()">Back to Home</button>
+            {% if loggedIn %}
+                <button class='cta-button' onclick="dashboardAction()">Dashboard</button>
+            {% endif %}
+
+            <h1>
+                Terms of Service
+            </h1>
+    
+            <h2>1. Account Registration</h2>
+            <p>
+                In order to use certain features of the Services, you will be required to create an account. To create an account, you must provide us with accurate and complete information about yourself, including your email address, and unless you sign in using Google or another 3rd party, a password. You are responsible for maintaining the confidentiality of your login information and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account.
+            </p>
+    
+            <h2>2. User Conduct</h2>
+            <p>
+                You agree to use the Services in a manner that is consistent with all applicable laws and regulations. You agree not to use the Services for any purpose that is illegal, harmful, offensive, or that infringes the rights of others. You also agree not to use the Services to transmit any material that is confidential, proprietary, or trade secret information of any third party.
+            </p>
+    
+            <h2>3. Data Security</h2>
+            <p>
+                Chary uses encryption to hide passwords from the database. Chary authenticates users to ensure that information is accessed by the person who owns it. However, no method of transmission over the Internet or method of electronic storage is 100% secure. Therefore, we cannot guarantee the absolute security of your data.
+            </p>
+    
+            <h2>4. Third-Party Links</h2>
+            <p>
+                The Services may contain links to websites or services that are not operated by us. We have no control over the content, privacy policies, or practices of third-party websites or services. You further acknowledge and agree that we shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such websites or services.        </p>
+    
+            <h2>5. Disclaimer of Warranties</h2>
+            <p>
+                THE SERVICES ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. WE MAKE NO WARRANTIES, EXPRESS OR IMPLIED, ABOUT THE OPERATION OF THE SERVICES OR THE INFORMATION, CONTENT, MATERIALS, OR PRODUCTS INCLUDED IN THE SERVICES. YOU EXPRESSLY AGREE THAT YOUR USE OF THE SERVICES IS AT YOUR SOLE RISK.
+            </p>
+    
+            <h2>6. Limitation of Liability</h2>
+            <p>
+                IN NO EVENT SHALL WE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES, INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, DATA, OR OTHER INTANGIBLE LOSSES (EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES), ARISING OUT OF OR IN CONNECTION WITH THE USE OR INABILITY TO USE THE SERVICES.        
+            </p>
+    
+            <h2>7. Indemnification</h2>
+            <p>
+                You agree to indemnify, defend, and hold us harmless from and against any and all claims, liabilities, damages, losses, costs, expenses, and fees (including reasonable attorneys' fees) arising out of or in connection with your use of the Services, your violation of these Terms, or your violation of any applicable laws or regulations.
+            </p>
+    
+            <h2>8. Entire Agreement</h2>
+            <p>
+                These Terms constitute the entire agreement between you and us and supersede all prior or contemporaneous communications, representations, or agreements, whether oral or written.
+            </p>
+    
+            <h2>9. Governing Law and Jurisdiction</h2>
+            <p>
+                These Terms shall be governed by and construed in accordance with the laws of the State of Illinois, without regard to its conflict of laws principles. Any dispute arising out of or relating to these Terms shall be subject to the exclusive jurisdiction of the courts of the State of Illinois.
+            </p>
+    
+            <h2>10. Change to Terms</h2>
+            <p>
+                We may update these Terms from time to time. If we make any material changes, we will notify you through a pop-up on the Services. You are responsible for reviewing these Terms periodically. Your continued use of the Services following the posting of updated Terms will constitute your agreement to such updated Terms.
+            </p>
+    
+            <h2>11. Contact Us</h2>
+            <p>
+                If you have any questions about these Terms, please contact us 
+                <a class="normal-link" href="https://koushik-2006.github.io/Expense-Tracker-/templates/contact.html" alt="Contact us link" >here</a>.
+            </p>
+        </div>
+
+        <div class="footer">
+            <div class='contact-methods'> 
+                <div class='contact-icon' title="Asha's Github">
+                    <a  target="_blank" rel="noopener noreferrer" href='https://github.com/koushik-2006' alt="Github logo">
+                        <img src="https://koushik-2006.github.io/Expense-Tracker-/static/images/GitHub-Mark-Light-64px.png" alt="Github logo">
+                    </a>
+                </div> 
+                <div class='contact-icon' title="Asha's LinkedIn">
+                    <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/koushik-cse/' alt="LinkedIn logo">
+                        <img src="https://koushik-2006.github.io/Expense-Tracker-/static/images/LI-In-Bug.png" alt="LinkedIn logo">
+                    </a>
+                </div>
+                <div class='contact-icon' title="Asha's personal portfolio website">
+                    <a target="_blank" rel="noopener noreferrer" href='https://leetcode.com/u/koushiksethuraman' alt="Logo for Asha's personal portfolio website">
+                        <img src="https://koushik-2006.github.io/Expense-Tracker-/static/images/AshaIV-logo-light.svg" alt="Logo for Asha's personal portfolio website">
+                    </a>
+                </div>
+            </div> 
+            <div id="legal">
+                <div class="legal-button">
+                    <a href="https://koushik-2006.github.io/Expense-Tracker-/templates/privacy-policy.html">Privacy Policy</a>
+                </div>
+                <span>|</span>
+                <div class="legal-button">
+                    <a href="https://koushik-2006.github.io/Expense-Tracker-/templates/tos.html">Terms of Service</a>
+                </div>
+                <span>|</span>
+                <div class="legal-button">
+                    <a href="https://koushik-2006.github.io/Expense-Tracker-/templates/contact.html">Contact</a>
+                </div>
+                <span>|</span>
+                <div class="report-button">
+                    <a target="_blank" rel="noopener noreferrer" href="https://mail.google.com/mail/?view=cm&to=koushik.sethuraman6@gmail.com&su=Project%20Discussion&body=Hi%20Koushik,%20I%20would%20like%20to%20connect%20with%20you%20regarding%20your%20project?usp=sf_link" alt="Link to report an issue">Report Issue</a>
+                </div>
+            </div>
+            <div class="btt-icon" onclick="bttAction()">
+                <img class="icon" src="https://koushik-2006.github.io/Expense-Tracker-/static/images/CharyLogo.svg" alt="Simplified version of the Chary logo. Scrolls to top of page when clicked.">            
+            </div>
+        </div>
+    </body>
+</html>

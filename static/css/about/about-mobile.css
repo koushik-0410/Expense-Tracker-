@@ -1,0 +1,86 @@
+/* 🇦​🇧​🇴​🇺​🇹​ Asha section */
+ol li {
+    font-size: 1.2rem;
+}
+
+ol li {
+    font-weight: 200;
+}
+
+#about {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    padding-left: var(--mobilePad);
+    padding-right: var(--mobilePad);
+    padding-top: var(--smallNavPad);
+}
+
+#about-header {
+    grid-row: 1;
+    margin-bottom: var(--smallPad);
+}
+
+#definition {
+    grid-row: 2;
+    background-color: var(--Dark);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#definition h2 {
+    text-align: center;
+    margin-top: 0px;
+}
+
+#definition h3 {
+    font-size: 1.6rem;
+    margin: 0px;
+}
+
+#dict-ipa {
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0px;
+}
+
+#citation {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+#summary {
+    margin-top: 10px;
+    grid-row: 3;
+}
+
+#about-app {
+    grid-row: 4;
+}
+
+#about-asha {
+    grid-row: 5;
+    margin-bottom: 20px;
+
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: .2fr 1fr;
+}
+
+#about-asha h2 {
+    grid-column: span 2;
+}
+
+#about-asha img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    grid-column: 1;
+    border-radius: 50%;
+}
+
+#about-asha p {
+    grid-column: 2;
+    margin-left: 20px;
+    margin-top: 0px;
+}

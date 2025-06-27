@@ -1,0 +1,29 @@
+html { 
+    scroll-behavior: smooth; 
+} 
+
+a, h3 {
+    color: var(--MainL);
+}
+
+#legal-content h1 {
+    margin-top: 1rem;
+}
+
+#legal-content .cta-button {
+    margin-left: 1rem;
+}
+
+/* Mobile */
+@media screen and (max-width:767px) {
+    .non-header {
+        padding: var(--mobilePad);
+    }
+}
+
+@media screen and (min-width:767px) {
+    .non-header {
+        padding-left: var(--DesktopPadBody);
+        padding-top: var(--DesktopPadBody);
+    }
+}

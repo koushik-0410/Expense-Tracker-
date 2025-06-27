@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Chary makes budgeting as easy as pie, giving you all the tools you need to set and meet your financial goals.">
+        <link rel='shortcut icon' sizes='256x256' href='https://koushik-2006.github.io/Expense-Tracker-/static/images/CharyLogo.svg'>
+
+        <!-- Google Font imports -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,600&family=Pacifico&display=swap" rel="stylesheet">
+
+        <!-- CSS Stylesheets -->
+        <link rel='stylesheet' href='https://koushik-2006.github.io/Expense-Tracker-/static/css/style.css'>
+        <link rel='stylesheet' media='screen and (min-width:768px)' href='https://koushik-2006.github.io/Expense-Tracker-/static/css/landing/landing.css'>
+        <link rel='stylesheet' media='screen and (max-width:767px)' href='https://koushik-2006.github.io/Expense-Tracker-/static/css/landing/landing-mobile.css'>
+
+        <!-- JavaScript links -->
+        <script src='https://koushik-2006.github.io/Expense-Tracker-/static/javascript/landing.js'></script>
+        <script src='https://koushik-2006.github.io/Expense-Tracker-/static/javascript/script.js'></script>
+
+        <Title>Chary</Title>
+    </head>
+
+    <body onload="configureLanding()">
+        <div id="header-container">
+            <header><div class="logo-title"><img id='large-logo' src="https://koushik-2006.github.io/Expense-Tracker-/static/images/CharyLogo.svg" onclick="homeAction()" alt='Chary logo'><span id="expHeading" style="font-size: 40px; font-weight: bold; color: #333; margin-left: 10px;">EXPENZO</span></div><img id='toggle-icon' class="hamburg icon" src="https://koushik-2006.github.io/Expense-Tracker-/static/images/hamburger-icon.svg" onclick="toggleMenu()" alt="toggle menu button"><nav id="website-nav"><a href="https://koushik-2006.github.io/Expense-Tracker-/templates/about.html">~ KOUSHIK S</nav></a></header>
+
+        </div>
+
+        <div class="content non-header" id="landing-hero">
+            <div id="hero-text">
+                <h1 id="hero1">Spend your money💳 🪙in EXPENZO And Track Your Expenses 📈</h1>
+                <svg id="hero2" height="140" width="530">
+                    <text x="0" y="10" stroke-width="7" paint-order="stroke">
+                        <tspan x="0" dx="0" dy="35">Keep track of your daily spendings with EXPENZO Visualize</tspan>
+                        <tspan x="0" dx="0" dy="35">your expenses and make budgeting plans to achieve your</tspan>
+                        <tspan x="0" dx="0" dy="35">money-saving goals</tspan>
+                    </text>
+                </svg>
+                <h3 id="hero2-mobile">Keep track of your daily spendings with EXPENZO Visualize your expenses and make budgeting plans to achieve your money-saving goals</h3>
+                <div id="hero3">
+                    
+                        <button class="cta-button" ><a href="https://koushik-2006.github.io/Expense-Tracker-/templates/dashboard.html">Dashboard</a> </button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                        <button class="cta-button" id="hero-login" ><a href="https://koushik-2006.github.io/Expense-Tracker-/templates/login.html">Log In</a></button>
+                        <button class="cta-button"><a href="https://koushik-2006.github.io/Expense-Tracker-/templates/signup.html">Get Started</a></button>
+                    
+                </div>
+                <div id="hero-img">
+                    <img id="hero-img-svg" src="https://koushik-2006.github.io/Expense-Tracker-/static/images/Chary_hero_crop.svg" alt="Woman holding credit card">
+                </div>
+                <div class="centered" id="down-icon-container">
+                    <img id='down-icon' class='icon floating' src="https://koushik-2006.github.io/Expense-Tracker-/static/images/down-icon-light.svg" onclick="downAction()" alt="Down arrow to read more">
+                </div>
+            </div>
+            <div id="hero-img-mobile">
+                <img id="hero-img-svg" src="https://koushik-2006.github.io/Expense-Tracker-/static/images/mobile_hero.svg" alt="Woman holding credit card">
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    </div>
+        </div>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+        <div class="non-header" id="landing-info">
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <div class="info-box" id="info1">
+                <img class="number" src="https://koushik-2006.github.io/Expense-Tracker-/static/images/undraw_pie_chart.svg" alt="Person pulling on a piece of a pie chart">
+                <h3><span class="subhead">𝚃𝚊𝚒𝚕𝚘𝚛 𝚈𝚘𝚞𝚛 𝙱𝚞𝚍𝚐𝚎𝚝, 𝙼𝚊𝚜𝚝𝚎𝚛 𝚈𝚘𝚞𝚛 𝙼𝚘𝚗𝚎𝚢</span><br>No more one-size-fits-all plans — design budgets that match your lifestyle.
+Set spending limits, track progress, and stay in control.
+Your financial journey, fully personalized.</h3>
+            </div>
+            <div class="info-box" id="info2">
+                <img class="number" src="https://koushik-2006.github.io/Expense-Tracker-/static/images/undraw_gone_shopping.svg" alt="Person shopping with a hand-held basket">
+                <h3><span class="subhead">𝙻𝚘𝚐 𝚂𝚖𝚊𝚛𝚝, 𝚂𝚙𝚎𝚗𝚍 𝚂𝚖𝚊𝚛𝚝𝚎𝚛</span><br> Effortlessly record every expense — big or small — in seconds.
+Stay organized with real-time tracking and clear categories.
+Know where your money goes, always.</h3>
+            </div>
+            <div class="info-box" id="info3">
+                <img class="number" src="https://koushik-2006.github.io/Expense-Tracker-/static/images/undraw_statistics.svg" alt="Two people holding up a large data presentation">
+                <h3><span class="subhead">𝚂𝚎𝚎 𝚝𝚑𝚎 𝚂𝚝𝚘𝚛𝚢 𝙱𝚎𝚑𝚒𝚗𝚍 𝚈𝚘𝚞𝚛 𝚂𝚙𝚎𝚗𝚍𝚒𝚗𝚐</span><br> Turn your data into clear, visual insights that make sense.
+Track trends, compare categories, and spot saving opportunities.
+Your money habits — decoded and displayed.</h3>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class='contact-methods'> 
+                <div class='contact-icon' title="Asha's Github">
+                    <a  target="_blank" rel="noopener noreferrer" href='https://github.com/koushik-2006' alt="Github logo">
+                        <img src="https://koushik-2006.github.io/Expense-Tracker-/static/images/GitHub-Mark-Light-64px.png" alt="Github logo">
+                    </a>
+                </div> 
+                <div class='contact-icon' title="Asha's LinkedIn">
+                    <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/koushik-cse/' alt="LinkedIn logo">
+                        <img src="https://koushik-2006.github.io/Expense-Tracker-/static/images/LI-In-Bug.png" alt="LinkedIn logo">
+                    </a>
+                </div>
+                <div class='contact-icon' title="Asha's personal portfolio website">
+                    <a target="_blank" rel="noopener noreferrer" href='https://leetcode.com/u/koushiksethuraman' alt="Logo for Asha's personal portfolio website">
+                        <img src="https://koushik-2006.github.io/Expense-Tracker-/static/images/AshaIV-logo-light.svg" alt="Logo for Asha's personal portfolio website">
+                    </a>
+                </div>
+            </div> 
+            <div id="legal">
+                <div class="legal-button">
+                    <a href="https://koushik-2006.github.io/Expense-Tracker-/templates/privacy-policy.html">Privacy Policy</a>
+                </div>
+                <span>|</span>
+                <div class="legal-button">
+                    <a href="https://koushik-2006.github.io/Expense-Tracker-/templates/tos.html">Terms of Service</a>
+                </div>
+                <span>|</span>
+                <div class="legal-button">
+                    <a href="https://koushik-2006.github.io/Expense-Tracker-/templates/contact.html">Contact</a>
+                </div>
+                <span>|</span>
+                <div class="report-button">
+                    <a target="_blank" rel="noopener noreferrer" href="https://mail.google.com/mail/u/0/?to=koushik.sethuraman6@gmail.com&su=Project+Discussion&body=Hi+Koushik,+I+would+like+to+connect+with+you+regarding+your+project?usp%3Dsf_link&fs=1&tf=cm" alt="Link to report an issue">Report Issue</a>
+                </div>
+            </div>
+            <div class="btt-icon" onclick="bttAction()"><a href="https://koushik-2006.github.io/Expense-Tracker-/templates/index.html"></a> 
+                <img class="icon" src="https://koushik-2006.github.io/Expense-Tracker-/static/images/CharyLogo.svg" alt="Simplified version of the Chary logo. Scrolls to top of page when clicked.">            
+            </div>
+        </div>
+    </body>
+</html>
